@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "langchain-crc-api"
+version = "0.0.1"
+description = ""
+authors = []
+readme = "README.md"
+packages = [{ include = "crc_api" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langchain = "^0.0.242"
+# had to use `export HNSWLIB_NO_NATIVE=1`, avoiding ERROR: Could not build wheels for hnswlib
+chromadb = "^0.4.3"
+fastapi = "<0.100.0"
+oauthlib = "^3.2.2"
+openai = "^0.27.8"
+pyjwt = "^2.8.0"
+pypdf = "^3.13.0"
+python-multipart = "^0.0.6" # for form data
+uvicorn = "^0.23.1"
+tiktoken = "^0.4.0"
+fire = "^0.5.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+httpx = "^0.24.1"
+pytest = "^7.4.0"
+ipykernel = "^6.25.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
