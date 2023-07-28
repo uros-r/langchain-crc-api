@@ -2,7 +2,7 @@
 
 ## Brief
 
-Create a proof-of-concept for a secure endpoint to generate a response from Langchain's conversational retrieval chain.
+Create a proof-of-concept implementation of a secure endpoint fronting Langchain's conversation retrieval chain.
 Use the following stack:
 
 - FastAPI
@@ -21,7 +21,7 @@ The endpoint should:
 
 ## Implementation
 
-This is a standalone Python program that demonstrates how the above requirements can be implemented.
+This is a demonstration that meets the above requirements in a simple standalone FastAPI server.
 
 API design, effectively representing a multi-part combination of a) JSON documents and b)
 a text stream, was a requirement for a fairly niche use case. In practice, this makes clients
